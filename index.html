@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset='utf-8' />
-    <title>USA Flag</title>
+    <title>Fun With Flags!</title>
     <style>
       body{
         margin: 0;
@@ -39,58 +39,36 @@
     </style>
   </head>
   <body>
-    <template id='stars-even'>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-    </template>
-    <template id='stars-odd'>
-      <div></div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div>★</div>
-      <div></div>
-      <div></div>
-    </template>
     <div id='flag'>
-      <div id='union'>
-      </div>
+      <div id='union'></div>
+      <div class='stripe'></div>
+      <div class='stripe'></div>
+      <div class='stripe'></div>
+      <div class='stripe'></div>
+      <div class='stripe'></div>
+      <div class='stripe'></div>
+      <div class='stripe'></div>
+      <div class='stripe stripe-full'></div>
+      <div class='stripe stripe-full'></div>
+      <div class='stripe stripe-full'></div>
+      <div class='stripe stripe-full'></div>
+      <div class='stripe stripe-full'></div>
+      <div class='stripe stripe-full'></div>
     </div>
+    <script>
+      document.getElementById('union').innerHTML = [
+        ' ',
+        ' ','★',' ','★',' ','★',' ','★',' ','★',' ','★',' ',
+        ' ',' ','★',' ','★',' ','★',' ','★',' ','★',' ',' ',
+        ' ','★',' ','★',' ','★',' ','★',' ','★',' ','★',' ',
+        ' ',' ','★',' ','★',' ','★',' ','★',' ','★',' ',' ',
+        ' ','★',' ','★',' ','★',' ','★',' ','★',' ','★',' ',
+        ' ',' ','★',' ','★',' ','★',' ','★',' ','★',' ',' ',
+        ' ','★',' ','★',' ','★',' ','★',' ','★',' ','★',' ',
+        ' ',' ','★',' ','★',' ','★',' ','★',' ','★',' ',' ',
+        ' ','★',' ','★',' ','★',' ','★',' ','★',' ','★',' ',
+        ' '
+      ].map(char => `<span>${char}</span>`).join('')
+    </script>
   </body>
-  <script>
-    const flag      = document.getElementById('flag')
-    const union     = document.getElementById('union')
-    const starsEven = document.getElementById('stars-even')
-    const starsOdd  = document.getElementById('stars-odd')
-    union.appendChild(document.createElement('div'))
-    for(let i = 0; i < 13; i ++){
-      if(i < 9){
-        var starsTemplate = i % 2 === 0 ? starsEven : starsOdd
-        union.appendChild(starsTemplate.content.cloneNode(true))
-      }
-      if(i < 7){
-        flag.appendChild(document.createElement('div')).className = 'stripe'
-      }else{
-        flag.appendChild(document.createElement('div')).className = 'stripe stripe-full'
-      }
-    }
-    union.appendChild(document.createElement('div'))
-  </script>
 </html>
