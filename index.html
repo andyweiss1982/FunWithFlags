@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>USA Flag</title>
+    <style>
+      body{
+        margin: 0;
+        color: #FFFFFF;
+        font-size: 2vw;
+      }
+      #flag{
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: repeat(13, 1fr);
+        width: 100vw;
+        height: 53vw;
+      }
+      #union{
+        grid-row: span 7;
+        background-color: #3C3B6E;
+        display: grid;
+        grid-template-columns: 1fr repeat(11, 3fr) 1fr;
+        grid-template-rows: 2fr repeat(9, 3fr) 2fr;
+        place-items: center center;
+      }
+      #union > :first-child, #union > :last-child{
+        grid-column: 1 / -1;
+      }
+      .stripe:nth-child(even){
+        background-color: #B22234;
+      }
+      .stripe:nth-child(odd){
+        background-color: #FFFFFF;
+      }
+      .stripe-full{
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <template id='stars-even'>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+    </template>
+    <template id='stars-odd'>
+      <div></div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div>★</div>
+      <div></div>
+      <div></div>
+    </template>
+    <div id='flag'>
+      <div id='union'>
+      </div>
+    </div>
+  </body>
+  <script>
+    const flag      = document.getElementById('flag')
+    const union     = document.getElementById('union')
+    const starsEven = document.getElementById('stars-even')
+    const starsOdd  = document.getElementById('stars-odd')
+    union.appendChild(document.createElement('div'))
+    for(let i = 0; i < 13; i ++){
+      if(i < 9){
+        var stars = i % 2 === 0 ? starsEven : starsOdd
+        union.appendChild(stars.content.cloneNode(true))
+      }
+      if(i < 7){
+        flag.appendChild(document.createElement('div')).className = 'stripe'
+      }else{
+        flag.appendChild(document.createElement('div')).className = 'stripe stripe-full'
+      }
+    }
+    union.appendChild(document.createElement('div'))
+  </script>
+</html>
