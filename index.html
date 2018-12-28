@@ -82,8 +82,8 @@
     union.appendChild(document.createElement('div'))
     for(let i = 0; i < 13; i ++){
       if(i < 9){
-        var stars = i % 2 === 0 ? starsEven : starsOdd
-        union.appendChild(stars.content.cloneNode(true))
+        var starsTemplate = i % 2 === 0 ? starsEven : starsOdd
+        union.appendChild(starsTemplate.content.cloneNode(true))
       }
       if(i < 7){
         flag.appendChild(document.createElement('div')).className = 'stripe'
