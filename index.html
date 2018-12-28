@@ -6,8 +6,6 @@
     <style>
       body{
         margin: 0;
-        color: #FFFFFF;
-        font-size: 2vw;
       }
       #flag{
         display: grid;
@@ -17,13 +15,14 @@
         height: 53vw;
       }
       #union{
-        padding: 1vw;
         grid-row: span 7;
         background-color: #3C3B6E;
+        padding: 1vw;
+        font-size: 2vw;
+        color: #FFFFFF;
         display: grid;
         grid-template-columns: repeat(11, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        place-items: center center;
+        place-items: center;
       }
       .stripe:nth-child(even){
         background-color: #B22234;
@@ -38,7 +37,17 @@
   </head>
   <body>
     <div id='flag'>
-      <div id='union'></div>
+      <div id='union'>
+        <b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b>
+        <b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b>
+        <b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b>
+        <b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b>
+        <b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b>
+        <b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b>
+        <b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b>
+        <b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b>
+        <b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b>
+      </div>
       <div class='stripe'></div>
       <div class='stripe'></div>
       <div class='stripe'></div>
@@ -53,18 +62,5 @@
       <div class='stripe stripe-full'></div>
       <div class='stripe stripe-full'></div>
     </div>
-    <script>
-      document.getElementById('union').innerHTML = [
-        '★',' ','★',' ','★',' ','★',' ','★',' ','★',
-        ' ','★',' ','★',' ','★',' ','★',' ','★',' ',
-        '★',' ','★',' ','★',' ','★',' ','★',' ','★',
-        ' ','★',' ','★',' ','★',' ','★',' ','★',' ',
-        '★',' ','★',' ','★',' ','★',' ','★',' ','★',
-        ' ','★',' ','★',' ','★',' ','★',' ','★',' ',
-        '★',' ','★',' ','★',' ','★',' ','★',' ','★',
-        ' ','★',' ','★',' ','★',' ','★',' ','★',' ',
-        '★',' ','★',' ','★',' ','★',' ','★',' ','★'
-      ].map(char => `<span>${char}</span>`).join('')
-    </script>
   </body>
 </html>
