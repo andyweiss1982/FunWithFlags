@@ -1,6 +1,12 @@
 # Fun With Flags
-* Responsive American Flag with CSS Grid
+* Responsive Flags with CSS Grid
 * See it at https://andyweiss1982.github.io/FunWithFlags/
 
-## Proper Proportions, More or Less
-See http://www.usflag.org/flagspecs.html
+## Proportions and Colors
+* https://en.wikipedia.org/wiki/Flag_of_France
+* https://en.wikipedia.org/wiki/Flag_of_Ghana
+* https://en.wikipedia.org/wiki/Flag_of_Finland
+* https://en.wikipedia.org/wiki/Flag_of_Chile
+* http://www.usflag.org/flagspecs.html
+
+

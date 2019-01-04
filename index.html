@@ -6,15 +6,82 @@
     <style>
       body{
         margin: 0;
-      }
-      #flag{
+        background-color: gray;
         display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+      }
+      .flag{
+        display: grid;
+        width: 100vw;
+      }
+      #usa{
+        height: 53vw;
         grid-template-columns: 2fr 3fr;
         grid-template-rows: repeat(13, 1fr);
-        width: 100vw;
-        height: 53vw;
       }
-      #union{
+      #france{
+        height: 67vw;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .france-stripe:nth-child(1){
+        background-color:#0055A4;
+      }
+      .france-stripe:nth-child(2){
+        background-color:#FFFFFF;
+      }
+      .france-stripe:nth-child(3){
+        background-color:#EF4135;
+      }
+      #ghana{
+        height: 67vw;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+      .ghana-stripe:nth-child(1){
+        background-color: #CE1126;
+      }
+      .ghana-stripe:nth-child(2){
+        background-color: #FCD116;
+        display: grid;
+        place-items: center;
+        font-size: 16vw;
+      }
+      .ghana-stripe:nth-child(3){
+        background-color: #006B3F;
+      }
+      #finland{
+        height: 61vw;
+        grid-template-columns: 5fr 3fr 10fr;
+        grid-template-rows: 4fr 3fr 4fr;
+      }
+      .fin-wh{
+        background-color: #FFFFFF;
+      }
+      .fin-bl{
+        background-color: #003399;
+      }
+      .stripe-full{
+        grid-column: 1 / -1;
+      }
+      #chile{
+        height: 67vw;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+      }
+      #chile-union{
+        background-color: #0039A6;
+        color: #FFFFFF;
+        display: grid;
+        place-items: center;
+        font-size: 18vw;
+      }
+      .chile-stripe:nth-child(2){
+        background-color: #FFFFFF;
+      }
+      .chile-stripe:nth-child(3){
+        background-color: #D52B1E;
+      }
+      #usa-union{
         grid-row: span 7;
         background-color: #3C3B6E;
         padding: 1vw;
@@ -24,20 +91,41 @@
         grid-template-columns: repeat(11, 1fr);
         place-items: center;
       }
-      .stripe:nth-child(even){
+      .usa-stripe:nth-child(even){
         background-color: #B22234;
       }
-      .stripe:nth-child(odd){
+      .usa-stripe:nth-child(odd){
         background-color: #FFFFFF;
-      }
-      .stripe-full{
-        grid-column: span 2;
       }
     </style>
   </head>
   <body>
-    <div id='flag'>
-      <div id='union'>
+    <div class='flag' id='france'>
+      <div class='france-stripe'></div>
+      <div class='france-stripe'></div>
+      <div class='france-stripe'></div>
+    </div>
+    <div class='flag' id='ghana'>
+      <div class='ghana-stripe'></div>
+      <div class='ghana-stripe'>
+          <b>★</b>
+      </div>
+      <div class='ghana-stripe'></div>
+    </div>
+    <div class='flag' id='finland'>
+        <div class='fin-wh'></div><div class='fin-bl'></div><div class='fin-wh'></div>
+        <div class='fin-bl stripe-full'></div>
+        <div class='fin-wh'></div><div class='fin-bl'></div><div class='fin-wh'></div>
+      </div>
+    <div class='flag' id='chile'>
+      <div id='chile-union'>
+        <b>★</b>
+      </div>
+      <div class='chile-stripe'></div>
+      <div class='chile-stripe stripe-full'></div>
+    </div>
+    <div class='flag' id='usa'>
+      <div id='usa-union'>
         <b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b>
         <b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b>
         <b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b>
@@ -48,19 +136,19 @@
         <b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b>
         <b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b><b></b><b>★</b>
       </div>
-      <div class='stripe'></div>
-      <div class='stripe'></div>
-      <div class='stripe'></div>
-      <div class='stripe'></div>
-      <div class='stripe'></div>
-      <div class='stripe'></div>
-      <div class='stripe'></div>
-      <div class='stripe stripe-full'></div>
-      <div class='stripe stripe-full'></div>
-      <div class='stripe stripe-full'></div>
-      <div class='stripe stripe-full'></div>
-      <div class='stripe stripe-full'></div>
-      <div class='stripe stripe-full'></div>
+      <div class='usa-stripe'></div>
+      <div class='usa-stripe'></div>
+      <div class='usa-stripe'></div>
+      <div class='usa-stripe'></div>
+      <div class='usa-stripe'></div>
+      <div class='usa-stripe'></div>
+      <div class='usa-stripe'></div>
+      <div class='usa-stripe stripe-full'></div>
+      <div class='usa-stripe stripe-full'></div>
+      <div class='usa-stripe stripe-full'></div>
+      <div class='usa-stripe stripe-full'></div>
+      <div class='usa-stripe stripe-full'></div>
+      <div class='usa-stripe stripe-full'></div>
     </div>
   </body>
 </html>
