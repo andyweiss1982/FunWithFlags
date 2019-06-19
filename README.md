@@ -9,4 +9,6 @@
 * https://en.wikipedia.org/wiki/Flag_of_Chile
 * http://www.usflag.org/flagspecs.html
 
+## Make me a Flag!
 
+* Clone, checkout a branch, and submit a PR!
