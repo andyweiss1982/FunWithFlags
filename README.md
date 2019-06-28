@@ -3,6 +3,7 @@
 * See it at https://andyweiss1982.github.io/FunWithFlags/
 
 ## Proportions and Colors
+* https://en.wikipedia.org/wiki/Flag_of_Ireland
 * https://en.wikipedia.org/wiki/Flag_of_France
 * https://en.wikipedia.org/wiki/Flag_of_Ghana
 * https://en.wikipedia.org/wiki/Flag_of_Finland
