@@ -97,6 +97,23 @@
       .usa-stripe:nth-child(odd){
         background-color: #FFFFFF;
       }
+      #japan{
+        display: grid;
+        background-color: #FFFFFF;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 67vw;  
+        place-items: center;   
+      }
+      .red-japan{
+        background-color: #bc002d;
+        border-radius: 50%;
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+        width: 40vw;
+        height: 40vw;
+      }
     </style>
   </head>
   <body>
@@ -149,6 +166,9 @@
       <div class='usa-stripe stripe-full'></div>
       <div class='usa-stripe stripe-full'></div>
       <div class='usa-stripe stripe-full'></div>
+    </div>
+    <div class='flag' id='japan'>
+      <div class='red-japan'></div>
     </div>
   </body>
 </html>
