@@ -9,6 +9,8 @@
 * https://en.wikipedia.org/wiki/Flag_of_Chile
 * http://www.usflag.org/flagspecs.html
 * https://en.wikipedia.org/wiki/Flag_of_Japan
+* https://en.wikipedia.org/wiki/Flag_of_Ireland
+* https://en.wikipedia.org/wiki/Flag_of_Sweden
 
 ## Make me a Flag!
 

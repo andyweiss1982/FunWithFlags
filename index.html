@@ -14,6 +14,10 @@
       .flag{
         display: grid;
         width: 100vw;
+        
+      }
+      .stripe-full{
+        grid-column: 1 / -1;
       }
       #usa{
         height: 53vw;
@@ -60,9 +64,6 @@
       .fin-bl{
         background-color: #003399;
       }
-      .stripe-full{
-        grid-column: 1 / -1;
-      }
       #chile{
         height: 67vw;
         grid-template-columns: 1fr 2fr;
@@ -108,6 +109,29 @@
         border-radius: 50%;
         width: 40vw;
         height: 40vw;
+      #ireland{
+        height: 50vw;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .ireland-stripe:nth-child(1){
+        background-color:#4C9C62;
+      }
+      .ireland-stripe:nth-child(2){
+        background-color:#FFFFFF;
+      }
+      .ireland-stripe:nth-child(3){
+        background-color:#E9863F;
+      }
+      #sweden{
+        height: 63vw;
+        grid-template-columns: 5fr 2fr 9fr;
+        grid-template-rows: 4fr 2fr 4fr;
+      }
+      .swed-bl{
+        background-color: #3668A1;
+      }
+      .swed-yl{
+        background-color: #ECC505;
       }
     </style>
   </head>
@@ -164,6 +188,15 @@
     </div>
     <div class='flag' id='japan'>
       <div class='red-japan'></div>
+    <div class='flag' id='ireland'>
+      <div class='ireland-stripe'></div>
+      <div class='ireland-stripe'></div>
+      <div class='ireland-stripe'></div>
+    </div>
+    <div class='flag' id='sweden'>
+      <div class='swed-bl'></div><div class='swed-yl'></div><div class='swed-bl'></div>
+      <div class='swed-yl stripe-full'></div>
+      <div class='swed-bl'></div><div class='swed-yl'></div><div class='swed-bl'></div>
     </div>
   </body>
 </html>
